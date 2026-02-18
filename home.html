@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo de Tintas</title>
+
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="navbar__logo">
+      <img src="./assets/images/logo.png" alt="Logo da loja">
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="home">
+
+    <!-- Search -->
+    <section class="search">
+      <input 
+        type="text" 
+        placeholder="Buscar tinta pelo nome..."
+        id="searchInput"
+      />
+    </section>
+
+    <!-- Inspiration Carousel -->
+    <section class="carousel">
+      <div class="carousel__track">
+        <img src="./assets/images/inspirations/1.jpg" alt="">
+        <img src="./assets/images/inspirations/2.jpg" alt="">
+        <img src="./assets/images/inspirations/3.jpg" alt="">
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+      <h2>Categorias</h2>
+
+      <div class="categories__list">
+        <button class="category-card">Acrílica</button>
+        <button class="category-card">Esmalte</button>
+        <button class="category-card">Verniz</button>
+        <button class="category-card">Complementos</button>
+      </div>
+    </section>
+
+    <!-- Top Selling -->
+    <section class="top-products">
+      <div class="section-header">
+        <h2>Mais Vendidas</h2>
+      </div>
+
+      <div class="products__grid">
+        <!-- Cards virão do JS -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Bottom Navigation -->
+  <nav class="bottom-nav">
+    <button>Home</button>
+    <button>Categorias</button>
+    <button>Info</button>
+  </nav>
+
+  <script src="./js/pages/home.js"></script>
+</body>
+</html>

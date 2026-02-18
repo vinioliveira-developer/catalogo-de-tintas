@@ -1,0 +1,8 @@
+/* Base styles */
+@import './base/reset.css';
+@import './base/variables.css';
+@import './base/global.css';
+
+/* Page styles */
+@import './pages/welcome.css';
+@import './pages/home.css';

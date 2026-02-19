@@ -6,13 +6,14 @@
   <title>Catálogo de Tintas</title>
 
   <link rel="stylesheet" href="./css/main.css" />
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet"> <!--boxicons-->
 </head>
 <body>
 
   <!-- Navbar -->
   <header class="navbar">
     <div class="text__nav">
-      <span>Catálogo de tintas Neto</span>
+      <span>Catálogo de tintas <span class="brand">Neto</span></span>
     </div>
 
     <div class="navbar__logo">
@@ -25,25 +26,33 @@
 
     <!-- Search -->
     <section class="search">
-      <input 
-        type="text" 
-        placeholder="Buscar tinta pelo nome..."
-        id="searchInput"
-      />
+      <div class="container__search">
+        <i class='bx bx-search'></i>
+        <input
+          type="text"
+          placeholder="Buscar tinta pelo nome..."
+          id="searchInput"
+        />
+      </div>
     </section>
 
     <!-- Inspiration Carousel -->
-    <section class="carousel">
-      <div class="carousel__track">
-        <img src="./assets/images/inspirations/1.jpg" alt="">
-        <img src="./assets/images/inspirations/2.jpg" alt="">
-        <img src="./assets/images/inspirations/3.jpg" alt="">
+    <section class="section__carousel">
+      <h2 class="section__title">Inspire-se</h2>
+      <div class="carousel">
+        <div class="carousel__track">
+          <img src="./assets/images/inspirations/azul-ceu.png" alt="Inspiração para o cliente">
+          <img src="./assets/images/inspirations/house-gren.png" alt="Inspiração para o cliente">
+          <img src="./assets/images/inspirations/sala-e7e2d3.png" alt="Inspiração para o cliente">
+          <img src="./assets/images/inspirations/house-paint.jpg" alt="Inspiração para o cliente">
+          <img src="./assets/images/inspirations/sala-gren.png" alt="Inspiração para o cliente">
+        </div>
       </div>
     </section>
 
     <!-- Categories -->
     <section class="categories">
-      <h2>Categorias</h2>
+      <h2 class="section__title">Categorias</h2>
 
       <div class="categories__list">
         <button class="category-card">Acrílica</button>
@@ -56,7 +65,7 @@
     <!-- Top Selling -->
     <section class="top-products">
       <div class="section-header">
-        <h2>Mais Vendidas</h2>
+        <h2 class="section__title">Mais Vendidas</h2>
       </div>
 
       <div class="products__grid">
@@ -68,10 +77,22 @@
 
   <!-- Bottom Navigation -->
   <nav class="bottom-nav">
-    <button>Home</button>
-    <button>Categorias</button>
-    <button>Info</button>
-  </nav>
+  <button class="active">
+    <i class="bx bx-home-alt"></i>
+    <span>Início</span>
+  </button>
+
+  <button>
+    <i class="bx bx-menu menu-icon"></i>
+    <span>Categorias</span>
+  </button>
+
+  <button>
+    <i class="bx bx-user"></i>
+    <span>Sobre</span>
+  </button>
+</nav>
+
 
   <script src="./js/pages/home.js"></script>
 </body>

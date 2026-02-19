@@ -1,5 +1,96 @@
 @charset "UTF-8";
 
+:root {
+
+  
+  /* CORES */ 
+
+  --color-bg: #f5f6f7;
+  --color-surface: #ffffff;
+  --color-surface-soft: #f1f3f5;
+
+  --color-text: #1f2937;
+  --color-text-soft: #374151;
+  --color-text-muted: #6b7280;
+
+  --color-border: #e5e7eb;
+
+  --color-primary: #001491;
+  --color-primary-soft: #dbeafe;
+
+  
+  /* 🔤 TIPOGRAFIA */  
+
+  --font-family-base: 'Inter', sans-serif;
+  --font-family-secondary: "Poppins", sans-serif;
+
+  --font-size-xs: 0.75rem;   /* 12px */
+  --font-size-sm: 0.875rem;  /* 14px */
+  --font-size-md: 1rem;      /* 16px */
+  --font-size-lg: 1.125rem;  /* 18px */
+  --font-size-xl: 1.25rem;   /* 20px */
+  --font-size-2xl: 1.5rem;   /* 24px */
+  --font-size-3xl: 2rem;     /* 32px */
+
+  --line-height-tight: 1.2;
+  --line-height-base: 1.4;
+  --line-height-loose: 1.6;
+
+  /* FONT WEIGHT */
+
+  --fw-thin: 100;
+  --fw-extra-light: 200;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extra-bold: 800;
+  --fw-black: 900;
+
+  
+  /* ESPAÇAMENTO */  
+
+  --space-1: 0.25rem;  /* 4px */
+  --space-2: 0.5rem;   /* 8px */
+  --space-3: 0.75rem;  /* 12px */
+  --space-4: 1rem;     /* 16px */
+  --space-5: 1.25rem;  /* 20px */
+  --space-6: 1.5rem;   /* 24px */
+  --space-7: 2rem;     /* 32px */
+  --space-8: 2.5rem;   /* 40px */
+  --space-9: 3rem;     /* 48px */
+  --space-10: 4rem;    /* 64px */
+
+  
+  /* RADIUS */  
+
+  --radius-sm: 0.5rem;   /* 8px */
+  --radius-md: 0.75rem;  /* 12px */
+  --radius-lg: 1rem;     /* 16px */
+  --radius-xl: 1.25rem;  /* 20px */
+  --radius-pill: 999rem;
+  --radius-round: 50%;
+
+  
+  /* SOMBRAS */  
+
+  --shadow-xs: 0 0.0625rem 0.125rem rgba(0,0,0,0.04);
+  --shadow-sm: 0 0.125rem 0.375rem rgba(0,0,0,0.06);
+  --shadow-md: 0 0.5rem 1.25rem rgba(0,0,0,0.08);
+  --shadow-lg: 0 0.75rem 1.875rem rgba(0,0,0,0.12);
+
+  /* TAMANHOS */
+
+  --container-padding: 1rem;
+  --card-padding: 1rem;
+  --section-gap: 2rem;
+
+  --carousel-item: 8.75rem; /* 140px */
+
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,9 +98,18 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    background-color: #f5f6f7;
-    color: #2b2b2b;
-;
+    font-family: var(--font-family-secondary);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-size: var(--font-size-md);
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 

@@ -1,5 +1,5 @@
 .home {
-  padding: 5rem 1rem 5rem;
+  padding: 5rem 2rem 5rem;
 }
 
 /* Navbar */
@@ -12,26 +12,27 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1rem;
-  margin-top: 0.5rem;
+  padding: 0 2rem;
+  margin-top: 1rem;
   
   z-index: 10;
 }
 
 .text__nav {
-  font-size: 1.2rem;
+  font-size: var(--font-size-2xl);
+  font-weight: var(--fw-medium);
 }
 
 .brand {
   color: black;
-  
+
 }
 
 .navbar__logo img {
   height: 40px;
-  background: #001491;
+  background: var(--color-primary);
   border-radius: 50%;
-  border: 2px solid #001491;
+  border: 2px solid var(--color-primary);
   outline: 4px solid #ffffff;
 
   box-shadow:
@@ -39,11 +40,10 @@
     0 2px 4px rgba(0,0,0,0.06);
 }
 
-
-/* Search */
 /* Search */
 .search {
-  margin-bottom: 1.5rem;
+  margin-top: var(--space-5);
+  margin-bottom: var(--space-6);
   background: #ffffff;
   border-radius: 999px;
 
@@ -77,19 +77,17 @@
 
 
 /* Carousel */
-
 .carousel {
   overflow-x: auto;
-  margin-bottom: 1.5rem;
-  margin-left: -16px;
-  margin-right: -16px;
+  margin-bottom: var(--space-7);
+  margin-left: -32px;
+  margin-right: -32px;
   padding: 0 1rem; 
 }
 
-
 .carousel__track {
   display: flex;
-  gap: 0.5rem;
+  gap: var(--space-4);
 }
 
 .carousel__track::after {
@@ -99,8 +97,8 @@
 
 
 .carousel__track img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   flex: 0 0 auto;
   object-fit: cover;
   border-radius: 16px;
@@ -110,12 +108,12 @@
 /* Categories */
 
 .section__title {
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--space-6);
   font-size: 1rem;
 }
 .categories__list {
   display: flex;
-  gap: 0.75rem;
+  gap: var(--space-4);
   overflow-x: auto;
 }
 
@@ -135,7 +133,7 @@
 .products__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: var(--space-4);
 }
 
 /* Bottom Nav */
@@ -147,7 +145,7 @@
   width: 100%;
   height: 72px;
 
-  background-color: #0f3d2e;
+  background-color: var(--color-primary);
 
   display: flex;
   justify-content: space-around;

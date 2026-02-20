@@ -78,31 +78,45 @@
 
 /* Carousel */
 .carousel {
-  overflow-x: auto;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
   margin-bottom: var(--space-7);
-  margin-left: -32px;
-  margin-right: -32px;
-  padding: 0 1rem; 
 }
 
 .carousel__track {
-  display: flex;
-  gap: var(--space-4);
-}
-
-.carousel__track::after {
-  content: "";
-  flex: 0 0 0.5rem; /* espaço final */
+  display: flex;  
 }
 
 
 .carousel__track img {
-  width: 100px;
-  height: 100px;
-  flex: 0 0 auto;
-  object-fit: cover;
-  border-radius: 16px;
+  flex: 0 0 100%;
+  width: 100%;
+  height: auto;
+  max-height: 30vh;
+  scroll-snap-align: start;
   display: block;
+}
+
+.carousel__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 10;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.section__carousel {
+  position: relative;
 }
 
 /* Categories */

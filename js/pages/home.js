@@ -99,14 +99,3 @@ carousel.addEventListener("touchmove", (e) => {
 carousel.addEventListener("touchend", () => {
   isDragging = false;
 });
-
-
-// BOTÕES
-
-nextBtn.addEventListener("click", () => {
-  scrollAmount += carousel.clientWidth;
-});
-
-prevBtn.addEventListener("click", () => {
-  scrollAmount -= carousel.clientWidth;
-});

@@ -99,3 +99,15 @@ carousel.addEventListener("touchmove", (e) => {
 carousel.addEventListener("touchend", () => {
   isDragging = false;
 });
+
+
+// ===== SMOOTH FOLLOW (efeito suave) =====
+let targetScroll = carousel.scrollLeft;
+const SMOOTH = 0.12; // menor = mais suave
+
+function smoothFollow() {
+  carousel.scrollLeft += (targetScroll - carousel.scrollLeft) * SMOOTH;
+  requestAnimationFrame(smoothFollow);
+}
+
+smoothFollow();

@@ -1,0 +1,79 @@
+/*Paint Card*/
+.top-paints {
+    margin-top: var(--space-7);
+}
+.top-paints__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.paint-card {
+  display: flex;
+  flex-direction: column;
+
+  padding: 1rem;
+  border-radius: 16px;
+  background-color: #f8f8f8;
+
+  height: 100%;
+}
+
+.paint-card__image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paint-card__image img {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+
+.paint-card__content {
+  margin-top: 0.75rem;
+}
+
+.paint-card__title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.paint-card__usage {
+  font-size: 0.75rem;
+  color: #555;
+}
+
+.paint-card__features {
+  font-size: 0.75rem;
+  color: #777;
+  margin-top: 0.25rem;
+}
+
+.paint-card__actions {
+  margin-top: auto; /* 👈 empurra o botão pra baixo */
+}
+
+.paint-card__button {
+  display: block;
+  margin-top: 1rem;
+
+  text-align: center;
+  padding: 0.6rem;
+
+  border-radius: 12px;
+  background-color: #b56a00;
+  color: #fff;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+}

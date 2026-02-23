@@ -1,0 +1,38 @@
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  background-color: var(--color-bg);
+  border-radius: 0 0 24px 24px;
+  
+  z-index: 10;
+}
+
+.text__nav {
+  font-size: var(--font-size-xl);
+  font-weight: var(--fw-medium);
+}
+
+.brand {
+  color: black;
+
+}
+
+.navbar__logo img {
+  height: 40px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  border: 2px solid var(--color-primary);
+  outline: 4px solid #ffffff;
+
+  box-shadow:
+    0 6px 16px rgba(0,0,0,0.08),
+    0 2px 4px rgba(0,0,0,0.06);
+}

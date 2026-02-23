@@ -6,3 +6,12 @@
 /* Page styles */
 @import './pages/welcome.css';
 @import './pages/home.css';
+@import './pages/product.css';
+@import './pages/category.css';
+
+/* Component styles */
+@import './components/card.css';
+@import './components/bottom-nav.css';
+@import './components/carousel.css';
+@import './components/search.css';
+@import './components/navbar.css';

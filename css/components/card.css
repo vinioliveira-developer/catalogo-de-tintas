@@ -14,7 +14,7 @@
 
   padding: 1rem;
   border-radius: 16px;
-  background-color: #f8f8f8;
+  background-color: var(--color-surface);
 
   height: 100%;
 }

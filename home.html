@@ -10,16 +10,7 @@
 </head>
 <body>
 
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="text__nav">
-      <span>Catálogo de tintas <span class="brand">Neto</span></span>
-    </div>
-
-    <div class="navbar__logo">
-      <img src="./assets/images/logo.jpeg" alt="Logo da loja">
-    </div>
-  </header>
+  <div id="navbar"></div>
 
   <!-- Main content -->
   <main class="home">
@@ -38,15 +29,29 @@
 
     <!-- Inspiration Carousel -->
     <section class="section__carousel">
-      <div class="carousel no-scrollbar" >
+      <div class="carousel no-scrollbar">
         <div class="carousel__track">
-          <img src="./assets/images/inspirations/Complementos.jpg" alt="Inspiração para o cliente">
-          <img src="./assets/images/inspirations/banner-lukscolor.jpg" alt="Inspiração para o cliente">
 
-          <img src="./assets/images/inspirations/coralar-carrossel.png" alt="Inspiração para o cliente">
+          <div class="carousel__item">
+            <a href="lukscolor.html">
+              <img src="./assets/images/inspirations/banner-lukscolor.png" alt="Linha Lukscolor">
+            </a>
+          </div>
+
+          <div class="carousel__item">
+            <a href="/complementos.html">
+              <img src="./assets/images/inspirations/coralar-carrossel.png" alt="Complementos">
+            </a>
+          </div>
+
+          <div class="carousel__item">
+            <a href="/complementos.html">
+              <img src="./assets/images/inspirations/iraja-tintas.png" alt="Complementos">
+            </a>
+          </div>
+
         </div>
       </div>
-
     </section>
 
     <!-- Categories -->
@@ -183,25 +188,10 @@
 
   </main>
 
-  <!-- Bottom Navigation -->
-  <nav class="bottom-nav">
-  <button class="active">
-    <i class="bx bx-home-alt"></i>
-    <span>Início</span>
-  </button>
-
-  <button>
-    <i class="bx bx-menu menu-icon"></i>
-    <span>Categorias</span>
-  </button>
-
-  <button>
-    <i class="bx bx-user"></i>
-    <span>Sobre</span>
-  </button>
-</nav>
+  <div id="bottom-nav"></div>
 
 
   <script src="./js/pages/home.js"></script>
+  <script src="js/components/components.js"></script>
 </body>
 </html>

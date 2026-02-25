@@ -6,5 +6,5 @@ async function loadComponent(id, file) {
   el.innerHTML = await res.text();
 }
 
-loadComponent("navbar", "/components/navbar.html");
-loadComponent("bottom-nav", "/components/bottom-nav.html");
+loadComponent("navbar", "./components/navbar.html");
+loadComponent("bottom-nav", "./components/bottom-nav.html");

@@ -61,7 +61,7 @@
   --space-8: 2.5rem;   /* 40px */
   --space-9: 3rem;     /* 48px */
   --space-10: 4rem;    /* 64px */
-
+  --page-padding: 1rem; /* 16px */
   
   /* RADIUS */  
 
@@ -111,6 +111,10 @@ body {
 
 .no-scrollbar::-webkit-scrollbar {
   display: none;
+}
+
+.section {
+  padding: 0 var(--page-padding);
 }
 
 .section__title {

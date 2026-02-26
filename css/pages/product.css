@@ -169,4 +169,23 @@
     margin-top: 1rem;
 }
 
+.text-boletim {
+  margin-top: 1rem;
+}
 
+.btn-doc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+
+  background: #9bcaf8;
+  color: #333;
+
+  padding: .8rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+
+  margin-top: .8rem;
+}

@@ -1,5 +1,5 @@
 .product {
-  padding: 5rem 1rem 6rem;
+  padding: 4rem 1rem 6rem;
   max-width: 480px;
   margin: 0 auto;
 }
@@ -15,15 +15,18 @@
     letter-spacing: 0.02em;
 }
 
-.product_main {
-    width: 100%;
-    overflow: hidden;
+.product__main {
+  width: calc(100% + (var(--page-padding) * 2));
+  margin-left: calc(var(--page-padding) * -1);
+  margin-right: calc(var(--page-padding) * -1);
 }
 
 .product__main img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
+
+  transition: opacity .25s ease;
 }
 
 .product__gallery {
@@ -48,7 +51,7 @@
 
 .product__thumbs img.active {
   opacity: 1;
-  outline: 2px solid var(--color-primary);
+  outline: 1px solid var(--color-primary);
 }
 
 .product__info {
@@ -65,17 +68,82 @@
   font-size: .9rem;
 }
 
+.product__colors-wrap {
+  position: relative;
+  margin: 0 -1rem;
+  padding: 0 1rem; 
+}
+
+.product__colors-wrap::before,
+.product__colors-wrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 32px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+
+.product__colors-wrap::before {
+  left: 0;
+  background: linear-gradient(
+    to left,
+    rgba(255,255,255,0),
+    rgba(255,255,255,1)
+  );
+}
+
+.product__colors-wrap::after {
+  right: 0;
+  background: linear-gradient(
+    to right,
+    rgba(255,255,255,0),
+    rgba(255,255,255,1)
+  );
+}
+
+.product__colors-wrap.show-left::before {
+  opacity: 1;
+}
+
+.product__colors-wrap.show-right::after {
+  opacity: 1;
+}
+
 .product__colors {
   display: flex;
   gap: .4rem;
   margin: 1rem 0;
+
+  overflow-x: auto;            
+  padding-bottom: .3rem;       
+  scroll-snap-type: x mandatory;
+
+  margin-right: -1rem;
+  padding-right: 1rem;
 }
 
 .product__colors span {
-  width: 28px;
+  min-width: 28px;
   height: 28px;
+  aspect-ratio: 1 / 1;
+  flex:  0 0 auto;
+
   border-radius: 6px;
   border: 1px solid #ddd;
+
+  scroll-snap-align: start; /* ponto de encaixe */
+  cursor: pointer;
+}
+
+.product__colors::-webkit-scrollbar {
+  display: none;
+}
+
+.product__colors {
+  scrollbar-width: none;
 }
 
 .btn-whatsapp {

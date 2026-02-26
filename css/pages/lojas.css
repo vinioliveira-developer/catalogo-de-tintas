@@ -1,0 +1,42 @@
+.stores {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+  background-color: var(--color-primary);
+}
+
+.stores__title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-text-white);
+}
+
+.store-card {
+  background: var(--color-bg);
+  border-radius: 14px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 14px rgba(0,0,0,.06);
+  text-align: center;
+}
+
+.store-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.store-card h2 {
+  font-size: 1.1rem;
+  margin-bottom: .3rem;
+}
+
+.store-card p {
+  font-size: .9rem;
+  color: #666;
+  margin-bottom: .3rem;
+}
+
+.store-card .btn-whatsapp {
+  margin-top: 1rem;
+}

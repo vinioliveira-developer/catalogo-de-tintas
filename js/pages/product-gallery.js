@@ -58,3 +58,15 @@ document.addEventListener("DOMContentLoaded", () => {
   updateFades();
 
 });
+
+//Botão WhatsApp
+
+const btnBudget = document.getElementById("btnBudget");
+
+  btnBudget.addEventListener("click", () => {
+    const productName = document.querySelector(".product__title").textContent;
+    const color = document.getElementById("selectedColor").textContent;
+
+  const url = `lojas.html?produto=${encodeURIComponent(productName)}&cor=${encodeURIComponent(color)}`;
+  window.location.href = url;
+});

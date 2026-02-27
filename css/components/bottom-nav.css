@@ -20,7 +20,7 @@
 }
 
 
-.bottom-nav button {
+.bottom-nav__item {
   flex: 1;
 
   background: none;

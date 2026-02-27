@@ -58,6 +58,13 @@
   margin-top: 1rem;
 }
 
+.product__disclaimer {
+  display: block;
+  font-size: 0.75rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
 .product__title {
   font-size: 1.2rem;
   font-weight: 600;

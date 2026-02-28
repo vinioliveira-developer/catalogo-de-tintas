@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+export function initProductGallery() {
 
   const mainImage = document.getElementById("product-main-image");
   const colorName = document.getElementById("selectedColor");
@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const thumbs = document.querySelectorAll(".product__thumbs img");
   const colors = document.querySelectorAll(".product__colors span");
 
-  // função única de troca (imagem + fade)
   function changeImage(newSrc) {
     mainImage.style.opacity = 0;
 
@@ -16,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 200);
   }
 
-  // THUMBS
   thumbs.forEach(thumb => {
     thumb.addEventListener("click", () => {
       const img = thumb.dataset.image;
@@ -28,7 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // CORES
   colors.forEach(color => {
     color.addEventListener("click", () => {
       const img = color.dataset.image;
@@ -42,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // EFEITO LATERAL DO CARROSSEL 
+  // fade lateral cores
   const wrap = document.querySelector('.product__colors-wrap');
   const colorsRow = document.querySelector('.product__colors');
 
@@ -57,16 +54,13 @@ document.addEventListener("DOMContentLoaded", () => {
   colorsRow.addEventListener('scroll', updateFades);
   updateFades();
 
-});
-
-//Botão WhatsApp
-
-const btnBudget = document.getElementById("btnBudget");
-
+  // botão orçamento
+  const btnBudget = document.getElementById("btnBudget");
   btnBudget.addEventListener("click", () => {
     const productName = document.querySelector(".product__title").textContent;
     const color = document.getElementById("selectedColor").textContent;
 
-  const url = `lojas.html?produto=${encodeURIComponent(productName)}&cor=${encodeURIComponent(color)}`;
-  window.location.href = url;
-});
+    const url = `lojas.html?produto=${encodeURIComponent(productName)}&cor=${encodeURIComponent(color)}`;
+    window.location.href = url;
+  });
+}

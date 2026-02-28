@@ -32,3 +32,44 @@
   font-size: 0.95rem;
   background: transparent;
 }
+
+/* RESULTADOS DA BUSCA */
+.search {
+  position: relative; /* necessário pro dropdown alinhar */
+}
+
+.search__list {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  width: 100%;
+
+  background: #fff;
+  border-radius: 12px;
+
+  box-shadow:
+    0 10px 24px rgba(0,0,0,0.08),
+    0 2px 6px rgba(0,0,0,0.04);
+
+  overflow: hidden;
+  z-index: 40;
+}
+
+/* item individual */
+.search__item {
+  display: block;
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.18s;
+}
+
+.search__item:hover {
+  background: #f3f4f6;
+}
+
+/* esconder quando vazio */
+.search__list:empty {
+  display: none;
+}

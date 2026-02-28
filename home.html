@@ -19,6 +19,7 @@
 
   <!-- JS -->
   <script src="./js/components/components.js" defer></script>
+  <script type="module" src="./js/pages/search.js"></script>
 </head>
 <body>
 
@@ -28,7 +29,7 @@
   <main class="home">
 
     <!-- Search -->
-    <section class="search">
+    <section class="search" id="searchResults">
       <div class="container__search">
         <i class='bx bx-search'></i>
         <input
@@ -37,6 +38,8 @@
           id="searchInput"
         />
       </div>
+
+      <div id="searchList" class="search__list"></div>
     </section>
 
     <!-- Inspiration Carousel -->

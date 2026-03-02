@@ -19,7 +19,7 @@
   height: 100%;
 }
 
-.paint-card__image {
+.paint-card__image a {
   width: 100%;
   aspect-ratio: 1 / 1;
   border-radius: 12px;
@@ -77,3 +77,4 @@
   font-weight: 600;
   text-decoration: none;
 }
+

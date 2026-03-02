@@ -14,6 +14,7 @@
 
 .carousel__item {
   flex: 0 0 100%;
+  scroll-snap-align: start;
 }
 
 .carousel__item a {

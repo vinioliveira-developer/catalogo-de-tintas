@@ -85,7 +85,7 @@ Desenvolvedor Front-End em transição de carreira
 Experiência prévia em gestão no varejo de materiais de construção  
 
 <p>
-  <a href="https://linkedin.com/in/seu-link">
+  <a href="https://www.linkedin.com/in/mvinicius-developer/">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="20"/> LinkedIn
   </a>
   <br>
@@ -93,7 +93,7 @@ Experiência prévia em gestão no varejo de materiais de construção
     🌐 Portfólio
   </a>
   <br>
-  <a href="https://github.com/seuusuario">
+  <a href="https://github.com/vinioliveira-developer">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="20"/> GitHub
   </a>
 </p>

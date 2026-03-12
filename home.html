@@ -22,194 +22,196 @@
   <script type="module" src="./js/components/search.js"></script>
 </head>
 <body>
-
-  <div id="navbar"></div>
-
-  <!-- Main content -->
-  <main class="home">
-
-    <!-- Search -->
-    <section class="search" id="searchResults">
-      <div class="container__search">
-        <i class='bx bx-search'></i>
-        <input
-          type="text"
-          placeholder="Buscar tinta pelo nome..."
-          id="searchInput" autocomplete="off"
-        />
-      </div>
-
-      <div id="searchList" class="search__list"></div>
-    </section>
-
-    <!-- Inspiration Carousel -->
-    <section class="section__carousel">
-      <div class="carousel no-scrollbar">
-        <div class="carousel__track">
-
-          <div class="carousel__item">
-            <a href="product.html?id=lukscolor-acrilico">
-              <img src="./assets/images/inspirations/banner-lukscolor.webp" alt="Linha Lukscolor">
-            </a>
-          </div>
-
-          <div class="carousel__item">
-            <a href="./complementos.html">
-              <img src="./assets/images/inspirations/coralar-carrossel.webp" alt="Complementos">
-            </a>
-          </div>
-
-          <div class="carousel__item">
-            <a href="./complementos.html">
-              <img src="./assets/images/inspirations/iraja-tintas.webp" alt="Complementos">
-            </a>
-          </div>
-
+<div class="app">
+  
+    <div id="navbar"></div>
+  
+    <!-- Main content -->
+    <main class="home">
+  
+      <!-- Search -->
+      <section class="search" id="searchResults">
+        <div class="container__search">
+          <i class='bx bx-search'></i>
+          <input
+            type="text"
+            placeholder="Buscar tinta pelo nome..."
+            id="searchInput" autocomplete="off"
+          />
         </div>
-      </div>
-    </section>
-
-    <!-- Categories -->
-    <section class="categories">
-      <h2 class="section__title">Categorias</h2>
-
-      <div class="categories__list no-scrollbar">
-        <a href="categorias/acrilica.html" class="category-card">
-          <div class="category-card__image">
-            <img src="assets/images/home/categories/acrilica.avif" alt="Parede sendo pintada com tinta acrílica">
+  
+        <div id="searchList" class="search__list"></div>
+      </section>
+  
+      <!-- Inspiration Carousel -->
+      <section class="section__carousel">
+        <div class="carousel no-scrollbar">
+          <div class="carousel__track">
+  
+            <div class="carousel__item">
+              <a href="product.html?id=lukscolor-acrilico">
+                <img src="./assets/images/inspirations/banner-lukscolor.webp" alt="Linha Lukscolor">
+              </a>
+            </div>
+  
+            <div class="carousel__item">
+              <a href="./complementos.html">
+                <img src="./assets/images/inspirations/coralar-carrossel.webp" alt="Complementos">
+              </a>
+            </div>
+  
+            <div class="carousel__item">
+              <a href="./complementos.html">
+                <img src="./assets/images/inspirations/iraja-tintas.webp" alt="Complementos">
+              </a>
+            </div>
+  
           </div>
-          <div class="category-card__label">Acrílica</div>
-        </a>
-
-        <a href="categorias/esmalte.html" class="category-card">
-          <div class="category-card__image">
-            <img src="assets/images/home/categories/esmalte.jpg" alt="Portão de ferro sendo pintado com esmalte">
-          </div>
-          <div class="category-card__label">Esmalte</div>
-        </a>
-
-        <a href="categorias/verniz.html" class="category-card">
-          <div class="category-card__image">
-            <img src="assets/images/home/categories/verniz.jpg" alt="Madeira sendo envernizada com pincel">
-          </div>
-          <div class="category-card__label">Verniz</div>
-        </a>
-
-        <a href="categorias/complementos.html" class="category-card">
-          <div class="category-card__image">
-            <img src="assets/images/home/categories/complementos.jpg" alt="Parede sendo lixada com lixa manual">
-          </div>
-          <div class="category-card__label">Complementos</div>
-        </a>
-      </div>
-    </section>
-
-
-
-    <!-- Top Selling -->
-    <section class="top-paints">
-      <h2 class="section__title">Top Tintas</h2>
-
-      <div class="top-paints__list">
-        <article class="paint-card">
-          <div class="paint-card__image">
-            <a href="product.html?id=lukscolor-acrilico">
-              <img
-                src="assets/images/home/categories/lukscolor-lata.webp"
-                alt="Lata de tinta Lukscolor Acrílico Premium Plus"
-              >
-            </a>
-          </div>
-
-          <div class="paint-card__content">
-            <h3 class="paint-card__title">
-              Lukscolor Acrílico Premium Plus
-            </h3>
-
-            <p class="paint-card__usage">
-              Exterior / interior
-            </p>
-
-            <p class="paint-card__features">
-              Lavável · baixo odor · anti-mofo
-            </p>
-          </div>
-
-          <div class="paint-card__actions">
-            <a href="product.html?id=lukscolor-acrilico" class="paint-card__button">
-              Ver detalhes
-            </a>
-          </div>
-        </article>
-
-        <article class="paint-card">
-          <div class="paint-card__image">
-            <a href="#">
-              <img
-                src="assets/images/home/categories/coral-lata.webp"
-                alt="Lata de tinta Coralar Acrílico Premium Plus"
-              >
-            </a>
-          </div>
-
-          <div class="paint-card__content">
-            <h3 class="paint-card__title">
-              Coralar Acrílico Premium Plus
-            </h3>
-
-            <p class="paint-card__usage">
-              Interior
-            </p>
-
-            <p class="paint-card__features">
-              Baixo odor · anti-mofo
-            </p>
-          </div>
-
-          <div class="paint-card__actions">
-            <a href="produto/coralar-acrilico.html" class="paint-card__button">
-              Ver detalhes
-            </a>
-          </div>
-        </article>
-
-        <article class="paint-card">
-          <div class="paint-card__image">
-            <a href="#">
-              <img
-                src="assets/images/home/categories/iraja-3,6.jpg"
-                alt="Lata de tinta Iraja Acrílico Econômica"
-              >
-            </a>
-          </div>
-
-          <div class="paint-card__content">
-            <h3 class="paint-card__title">
-              Iraja Acrílico Econômica
-            </h3>
-
-            <p class="paint-card__usage">
-              Interior
-            </p>
-
-            <p class="paint-card__features">
-              Alta Cobertura · anti-mofo
-            </p>
-          </div>
-
-          <div class="paint-card__actions">
-            <a href="produto/iraja-acrilico.html" class="paint-card__button">
-              Ver detalhes
-            </a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-
-  </main>
-
-  <div id="bottom-nav"></div>
+        </div>
+      </section>
+  
+      <!-- Categories -->
+      <section class="categories">
+        <h2 class="section__title">Categorias</h2>
+  
+        <div class="categories__list no-scrollbar">
+          <a href="categorias/acrilica.html" class="category-card">
+            <div class="category-card__image">
+              <img src="assets/images/home/categories/acrilica.avif" alt="Parede sendo pintada com tinta acrílica">
+            </div>
+            <div class="category-card__label">Acrílica</div>
+          </a>
+  
+          <a href="categorias/esmalte.html" class="category-card">
+            <div class="category-card__image">
+              <img src="assets/images/home/categories/esmalte.jpg" alt="Portão de ferro sendo pintado com esmalte">
+            </div>
+            <div class="category-card__label">Esmalte</div>
+          </a>
+  
+          <a href="categorias/verniz.html" class="category-card">
+            <div class="category-card__image">
+              <img src="assets/images/home/categories/verniz.jpg" alt="Madeira sendo envernizada com pincel">
+            </div>
+            <div class="category-card__label">Verniz</div>
+          </a>
+  
+          <a href="categorias/complementos.html" class="category-card">
+            <div class="category-card__image">
+              <img src="assets/images/home/categories/complementos.jpg" alt="Parede sendo lixada com lixa manual">
+            </div>
+            <div class="category-card__label">Complementos</div>
+          </a>
+        </div>
+      </section>
+  
+  
+  
+      <!-- Top Selling -->
+      <section class="top-paints">
+        <h2 class="section__title">Top Tintas</h2>
+  
+        <div class="top-paints__list">
+          <article class="paint-card">
+            <div class="paint-card__image">
+              <a href="product.html?id=lukscolor-acrilico">
+                <img
+                  src="assets/images/home/categories/lukscolor-lata.webp"
+                  alt="Lata de tinta Lukscolor Acrílico Premium Plus"
+                >
+              </a>
+            </div>
+  
+            <div class="paint-card__content">
+              <h3 class="paint-card__title">
+                Lukscolor Acrílico Premium Plus
+              </h3>
+  
+              <p class="paint-card__usage">
+                Exterior / interior
+              </p>
+  
+              <p class="paint-card__features">
+                Lavável · baixo odor · anti-mofo
+              </p>
+            </div>
+  
+            <div class="paint-card__actions">
+              <a href="product.html?id=lukscolor-acrilico" class="paint-card__button">
+                Ver detalhes
+              </a>
+            </div>
+          </article>
+  
+          <article class="paint-card">
+            <div class="paint-card__image">
+              <a href="#">
+                <img
+                  src="assets/images/home/categories/coral-lata.webp"
+                  alt="Lata de tinta Coralar Acrílico Premium Plus"
+                >
+              </a>
+            </div>
+  
+            <div class="paint-card__content">
+              <h3 class="paint-card__title">
+                Coralar Acrílico Premium Plus
+              </h3>
+  
+              <p class="paint-card__usage">
+                Interior
+              </p>
+  
+              <p class="paint-card__features">
+                Baixo odor · anti-mofo
+              </p>
+            </div>
+  
+            <div class="paint-card__actions">
+              <a href="produto/coralar-acrilico.html" class="paint-card__button">
+                Ver detalhes
+              </a>
+            </div>
+          </article>
+  
+          <article class="paint-card">
+            <div class="paint-card__image">
+              <a href="#">
+                <img
+                  src="assets/images/home/categories/iraja-3,6.jpg"
+                  alt="Lata de tinta Iraja Acrílico Econômica"
+                >
+              </a>
+            </div>
+  
+            <div class="paint-card__content">
+              <h3 class="paint-card__title">
+                Iraja Acrílico Econômica
+              </h3>
+  
+              <p class="paint-card__usage">
+                Interior
+              </p>
+  
+              <p class="paint-card__features">
+                Alta Cobertura · anti-mofo
+              </p>
+            </div>
+  
+            <div class="paint-card__actions">
+              <a href="produto/iraja-acrilico.html" class="paint-card__button">
+                Ver detalhes
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+  
+  
+    </main>
+  
+    <div id="bottom-nav"></div>
+</div>
 
   <script src="js/components/carousel.js"></script>
 

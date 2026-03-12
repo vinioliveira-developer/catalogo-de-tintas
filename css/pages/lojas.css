@@ -40,3 +40,17 @@
 .store-card .btn-whatsapp {
   margin-top: 1rem;
 }
+
+.btn-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  background: #4CAF50;
+  color: white;
+  padding: .9rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 2rem 0;
+}

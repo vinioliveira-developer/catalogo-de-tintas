@@ -11,6 +11,12 @@ body {
     font-size: var(--font-size-md);
 }
 
+.app {
+  max-width: 750px;
+  margin: 0 auto;
+  position: relative;
+}
+
 .no-scrollbar {
   scrollbar-width: none;
   -ms-overflow-style: none;

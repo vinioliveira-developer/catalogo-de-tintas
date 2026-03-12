@@ -17,86 +17,88 @@
 </head>
 
 <body>
-
-  <div id="navbar"></div>
-
-  <main class="product">
-
-    <!-- GALERIA -->
-    <section class="product__gallery">
-      <div class="product__main">
-        <img id="product-main-image"
-             src="assets/images/products/default.jpg"
-             alt="Imagem do produto" />
-      </div>
-
-      <div class="product__thumbs" id="productThumbs">
-        <!-- thumbs via JS -->
-      </div>
-    </section>
-
-    <!-- INFO -->
-    <section class="product__info">
-
-      <div class="product__info-text">
-        <span class="product__disclaimer">
-          *A cor exibida na tela pode variar conforme iluminação e superfície da aplicação.
-        </span>
-
-        <div class="product__color-name">
-          Cor: <span id="selectedColor">—</span>
+<div class="app">
+  
+    <div id="navbar"></div>
+  
+    <main class="product">
+  
+      <!-- GALERIA -->
+      <section class="product__gallery">
+        <div class="product__main">
+          <img id="product-main-image"
+               src="assets/images/products/default.jpg"
+               alt="Imagem do produto" />
         </div>
-      </div>
-
-      <!-- CORES -->
-      <div class="product__colors-wrap">
-        <div class="product__colors" id="productColors">
-          <!-- cores via JS -->
+  
+        <div class="product__thumbs" id="productThumbs">
+          <!-- thumbs via JS -->
         </div>
-      </div>
-
-      <h1 class="product__title" id="productTitle">
-        Nome do produto
-      </h1>
-
-      <p class="product__meta" id="productUse">
-        Uso
-      </p>
-
-      <p class="product__meta" id="productSizes">
-        Embalagem
-      </p>
-
-      <a class="btn-whatsapp" id="btnBudget">
-        <i class="bx bxl-whatsapp"></i>
-        Orçamento
+      </section>
+  
+      <!-- INFO -->
+      <section class="product__info">
+  
+        <div class="product__info-text">
+          <span class="product__disclaimer">
+            *A cor exibida na tela pode variar conforme iluminação e superfície da aplicação.
+          </span>
+  
+          <div class="product__color-name">
+            Cor: <span id="selectedColor">—</span>
+          </div>
+        </div>
+  
+        <!-- CORES -->
+        <div class="product__colors-wrap">
+          <div class="product__colors" id="productColors">
+            <!-- cores via JS -->
+          </div>
+        </div>
+  
+        <h1 class="product__title" id="productTitle">
+          Nome do produto
+        </h1>
+  
+        <p class="product__meta" id="productUse">
+          Uso
+        </p>
+  
+        <p class="product__meta" id="productSizes">
+          Embalagem
+        </p>
+  
+        <a class="btn-whatsapp" id="btnBudget">
+          <i class="bx bxl-whatsapp"></i>
+          Orçamento
+        </a>
+  
+      </section>
+  
+      <!-- DESCRIÇÃO -->
+      <section class="product__description card">
+        <h2 id="productHeading">
+          Título descrição
+        </h2>
+  
+        <p class="product__paragraph" id="productDescription">
+          Descrição do produto.
+        </p>
+      </section>
+  
+      <!-- BOLETIM -->
+      <h3 class="text-boletim" id="productDocText">
+        Para mais informações, baixe o boletim técnico
+      </h3>
+  
+      <a class="btn-doc" id="productDocLink" target="_blank">
+        📄 Boletim técnico
       </a>
-
-    </section>
-
-    <!-- DESCRIÇÃO -->
-    <section class="product__description card">
-      <h2 id="productHeading">
-        Título descrição
-      </h2>
-
-      <p class="product__paragraph" id="productDescription">
-        Descrição do produto.
-      </p>
-    </section>
-
-    <!-- BOLETIM -->
-    <h3 class="text-boletim" id="productDocText">
-      Para mais informações, baixe o boletim técnico
-    </h3>
-
-    <a class="btn-doc" id="productDocLink" target="_blank">
-      📄 Boletim técnico
-    </a>
-
-  </main>
-
-  <div id="bottom-nav"></div>
+  
+    </main>
+  
+    <div id="bottom-nav"></div>
+</div>
 
 </body>
 </html>

@@ -8,7 +8,7 @@ O projeto foi pensado para uso principalmente em dispositivos móveis, considera
 
 ## 🚀 Demonstração  
 
-![Preview do Portfolio](assets/imgages/preview.png)
+![Preview do Portfolio](/assets/images/preview.png)
 
 ---
 
